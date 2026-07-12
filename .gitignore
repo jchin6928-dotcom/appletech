@@ -4,3 +4,10 @@
 images/*.mov
 images/Apple tv Trailer.mp4
 images/Apple Music Trailer.mp4
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
