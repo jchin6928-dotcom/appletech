@@ -1,0 +1,6 @@
+.DS_Store
+**/.DS_Store
+# 视频超过 GitHub(100MB)/Cloudflare Pages(25MB) 上限，暂不纳入
+images/*.mov
+images/Apple tv Trailer.mp4
+images/Apple Music Trailer.mp4
