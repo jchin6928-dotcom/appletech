@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Apple — Home</title>
-  <link rel="stylesheet" href="css/style.css?v=16">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -26,27 +26,27 @@
   </header>
 
   <!-- ===== Hero: WWDC26 ===== -->
-  <section class="hero" style="background:#000 url('images/Apple Index BG Faded.png') center top/70% auto no-repeat;min-height:460px;padding:240px 0 30px">
+  <section class="hero" style="background:url('images/Apple Index BG Faded.png') center 50px/880px auto no-repeat, url('images/WWDC Background.PNG') center bottom/cover no-repeat, #000;background-blend-mode:screen, normal;min-height:660px;padding:230px 0 40px">
     <div class="wrap">
       <div class="wwdc">WWDC26</div>
       <p>Apple Worldwide Developers Conference.<br>Join us online June 8&ndash;12.</p>
       <div class="actions">
-        <a href="#" class="btn btn-blue">Add to calendar</a>
-        <a href="#" class="link">Learn more</a>
+        <a href="#" class="btn btn-blue" id="addToCalendar">Add to calendar</a>
+        <a href="images/WWDC Trailer web.mp4" class="link video-link">Learn more</a>
       </div>
     </div>
   </section>
 
-  <!-- ===== Promo band ===== -->
-  <section class="section" style="padding-top:36px">
-    <div class="wrap">
-      <div class="band band-photo">
+  <!-- ===== Promo band (full-bleed) ===== -->
+  <section class="section" style="padding:0">
+    <div class="band band-photo" style="border-radius:0;padding:0;min-height:520px">
+      <img class="photo-img" src="images/Home1.PNG" alt="Apple">
+      <div style="position:absolute;inset:0;z-index:1;background:linear-gradient(to right,rgba(0,0,0,.78) 0%,rgba(0,0,0,.35) 45%,rgba(0,0,0,0) 72%)"></div>
+      <div class="wrap" style="position:relative;z-index:2">
         <div class="copy">
           <h2>We create the technology<br>that moves the world forward.</h2>
           <p>Apple designs and builds innovative hardware, software, and services that enrich people&rsquo;s lives. From iPhone and Mac to Apple Watch and Apple Vision Pro, everything we create works together seamlessly.</p>
-        
         </div>
-        <img class="photo-img" src="images/Home1.PNG" alt="Apple">
       </div>
     </div>
   </section>
@@ -77,52 +77,30 @@
   </section>
 
   <!-- ===== Keynote banner ===== -->
-  <section class="section" style="padding-top:0">
+  <section class="section" style="padding:20px 0 30px">
     <div class="wrap">
-      <div class="banner band-photo">
-        <div class="copy">
+      <div class="banner" style="position:relative;overflow:hidden;padding:0;display:block;min-height:0">
+        <img src="images/Home2.PNG" alt="WWDC26 Keynote" style="display:block;width:100%;height:auto">
+        <div class="copy" style="position:absolute;top:50%;left:44px;transform:translateY(-50%);max-width:46%;z-index:2">
           <p style="color:var(--text-dim);font-size:13px;margin-bottom:4px">WWDC26 Keynote</p>
           <h3>Be there for the big reveal.</h3>
           <p>Watch the keynote on June 8 at 10 a.m. PT.<br>Available online and in the Apple Developer app.</p>
           <a href="#" class="link">Add to calendar</a>
         </div>
-        <img class="photo-img" src="images/Home2.PNG" alt="WWDC26 Keynote">
       </div>
     </div>
   </section>
 
   <!-- ===== Explore more from Apple ===== -->
-  <section class="section">
+  <section class="section" style="padding-top:30px">
     <div class="wrap">
       <h2>Explore more from Apple.</h2>
       <div class="grid grid-5">
-        <div class="card"><h3>iPhone 16 Pro</h3><p class="desc">Built for Apple Intelligence.</p><a href="#" class="link">Learn more</a><img class="card-img" src="images/iPhone%2016%20Pro_t.png" alt="iPhone 16 Pro"></div>
-        <div class="card"><h3>MacBook Air</h3><p class="desc">Speed of lightness.</p><a href="#" class="link">Learn more</a><img class="card-img" src="images/Macbook_t.png" alt="MacBook Air"></div>
-        <div class="card"><h3>Apple Watch Series 10</h3><p class="desc">Health at the core.</p><a href="#" class="link">Learn more</a><img class="card-img" src="images/Apple%20Watch%20Series%2010_t.png" alt="Apple Watch Series 10"></div>
-        <div class="card"><h3>AirPods 4</h3><p class="desc">Iconic. Now supersonic.</p><a href="#" class="link">Learn more</a><img class="card-img" src="images/AirPods%204_t.png" alt="AirPods 4"></div>
-        <div class="card"><h3>Apple Vision Pro</h3><p class="desc">Welcome to spatial computing.</p><a href="#" class="link">Learn more</a><img class="card-img" src="images/Apple%20vision_t.png" alt="Apple Vision Pro"></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== Apple Developer banner ===== -->
-  <section class="section" style="padding-top:0">
-    <div class="wrap">
-      <div class="banner">
-        <div class="copy" style="display:flex;gap:20px;align-items:flex-start">
-          <img src="images/Apple%20Developer_t.png" alt="Apple Developer" style="width:80px;height:80px;flex:none;border-radius:18px;object-fit:contain">
-          <div>
-            <h3>Apple Developer</h3>
-            <p>Everything you need to develop, test, and distribute your apps across all Apple platforms.</p>
-            <a href="#" class="link">Learn more</a>
-          </div>
-        </div>
-        <div class="copy">
-          <a href="#" class="link" style="display:block;margin-bottom:10px">Visit the Developer app</a>
-          <a href="#" class="link" style="display:block;margin-bottom:10px">Developer Program</a>
-          <a href="#" class="link" style="display:block;margin-bottom:10px">Beta Software</a>
-          <a href="#" class="link" style="display:block">Apple Developer Forums</a>
-        </div>
+        <div class="card"><h3>iPhone 16 Pro</h3><p class="desc">Built for Apple Intelligence.</p><img class="card-img" src="images/iPhone%2016%20Pro_t.png" alt="iPhone 16 Pro"></div>
+        <div class="card"><h3>MacBook Air</h3><p class="desc">Speed of lightness.</p><img class="card-img" src="images/Macbook_t.png" alt="MacBook Air"></div>
+        <div class="card"><h3>Apple Watch Series 10</h3><p class="desc">Health at the core.</p><img class="card-img" src="images/Apple%20Watch%20Series%2010_t.png" alt="Apple Watch Series 10"></div>
+        <div class="card"><h3>AirPods 4</h3><p class="desc">Iconic. Now supersonic.</p><img class="card-img" src="images/AirPods%204_t.png" alt="AirPods 4"></div>
+        <div class="card"><h3>Apple Vision Pro</h3><p class="desc">Welcome to spatial computing.</p><img class="card-img" src="images/Apple%20vision_t.png" alt="Apple Vision Pro"></div>
       </div>
     </div>
   </section>
@@ -138,11 +116,28 @@
         <div><h5>About Apple</h5><a href="#">Newsroom</a><a href="#">Apple Leadership</a><a href="#">Career Opportunities</a><a href="#">Contact Apple</a></div>
       </div>
       <div class="legal">
+        <strong style="display:block;margin-bottom:8px;color:#86868b;font-weight:600">This is a student web-design project for educational purposes only. Not affiliated with, endorsed by, or sponsored by Apple Inc. &ldquo;Apple&rdquo;, the Apple logo, and all product names are trademarks of Apple Inc.</strong>
         More ways to shop: Find an Apple Store or other retailer near you. Or call 1-800-MY-APPLE.<br>
         Copyright &copy; 2025 Apple Inc. All rights reserved. &nbsp; Privacy Policy &nbsp; Terms of Use &nbsp; Sales and Refunds &nbsp; Legal &nbsp; Site Map
       </div>
     </div>
   </footer>
+
+  <!-- ===== Toast notification ===== -->
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+    <span>Added to calendar</span>
+  </div>
+
+  <!-- ===== Video popup (modal) ===== -->
+  <div class="video-modal" id="videoModal" aria-hidden="true">
+    <div class="video-modal-inner">
+      <button class="video-modal-close" id="videoModalClose" aria-label="Close">&times;</button>
+      <video id="videoModalPlayer" controls playsinline>
+        <source src="" type="video/mp4">
+      </video>
+    </div>
+  </div>
 
   <script src="js/script.js"></script>
 </body>

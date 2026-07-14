@@ -21,55 +21,37 @@
         <a href="entertainment.html">Entertainment</a>
         <a href="support.html">Support</a>
       </nav>
-      <div class="nav-icons">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 7h12l1 13H5L6 7z"/><path d="M9 7a3 3 0 016 0"/></svg>
-      </div>
       <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
   </header>
 
-  <!-- ===== Store hero (dark) ===== -->
-  <section class="section" style="padding:50px 0">
-    <div class="wrap">
-      <div class="band" style="background:#0a0a0a">
+  <!-- ===== Store hero (full-bleed background) ===== -->
+  <section class="section" style="padding:0">
+    <div class="band band-photo" style="border-radius:0;padding:0;min-height:440px">
+      <img class="photo-img" src="images/Store Background 1.png" alt="Apple product line-up" style="object-position:center">
+      <div style="position:absolute;inset:0;z-index:1;background:linear-gradient(to right,rgba(0,0,0,.82) 0%,rgba(0,0,0,.4) 40%,rgba(0,0,0,0) 70%)"></div>
+      <div class="wrap" style="position:relative;z-index:2">
         <div class="copy">
           <h2 style="font-size:48px">Store.</h2>
           <p style="font-size:21px;color:var(--text)">The best way to buy<br>the products you love.</p>
           <div style="margin-top:18px">
-            <a href="#" class="btn btn-blue">Shop all products</a>
+            <a href="#latest" class="btn btn-blue">Shop all products</a>
           </div>
-          <a href="#" class="link" style="display:inline-block;margin-top:14px">Need shopping help?</a>
+          <a href="support.html" class="link" style="display:inline-block;margin-top:14px">Need shopping help?</a>
         </div>
-        <div class="media"><div class="ph" style="min-height:200px">Product line-up</div></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== Category strip (light) ===== -->
-  <section class="section section-light" style="padding:40px 0">
-    <div class="wrap">
-      <div class="cats">
-        <div class="cat"><div class="ph">Mac</div>Mac</div>
-        <div class="cat"><div class="ph">iPhone</div>iPhone</div>
-        <div class="cat"><div class="ph">iPad</div>iPad</div>
-        <div class="cat"><div class="ph">Watch</div>Apple Watch</div>
-        <div class="cat"><div class="ph">AirPods</div>AirPods</div>
-        <div class="cat"><div class="ph">TV</div>TV &amp; Home</div>
-        <div class="cat"><div class="ph">Acc</div>Accessories</div>
       </div>
     </div>
   </section>
 
   <!-- ===== The Latest (light) ===== -->
-  <section class="section section-light" style="text-align:left;padding-top:20px">
+  <section id="latest" class="section section-light" style="text-align:left;padding-top:40px">
     <div class="wrap">
       <h2 style="font-size:30px;text-align:left">The Latest.</h2>
       <div class="grid grid-4">
-        <div class="card"><p class="tag">New</p><h3>iPhone 16 Pro</h3><p class="desc">Built for Apple Intelligence.</p><p class="price">From RM 5,999</p><div class="ph">iPhone</div><div style="margin-top:12px"><a href="#" class="link">Learn more</a> &nbsp; <a href="#" class="btn btn-blue" style="font-size:14px;padding:5px 14px">Buy</a></div></div>
-        <div class="card"><p class="tag">New</p><h3>MacBook Air 13&Prime;</h3><p class="desc">Speed of lightness.</p><p class="price">From RM 4,499</p><div class="ph">MacBook</div><div style="margin-top:12px"><a href="#" class="link">Learn more</a> &nbsp; <a href="#" class="btn btn-blue" style="font-size:14px;padding:5px 14px">Buy</a></div></div>
-        <div class="card"><p class="tag">New</p><h3>iPad Pro</h3><p class="desc">Unbelievably thin. Incredibly powerful.</p><p class="price">From RM 4,199</p><div class="ph">iPad</div><div style="margin-top:12px"><a href="#" class="link">Learn more</a> &nbsp; <a href="#" class="btn btn-blue" style="font-size:14px;padding:5px 14px">Buy</a></div></div>
-        <div class="card"><p class="tag">New</p><h3>Apple Watch Series 10</h3><p class="desc">Thinnest ever.</p><p class="price">From RM 1,999</p><div class="ph">Watch</div><div style="margin-top:12px"><a href="#" class="link">Learn more</a> &nbsp; <a href="#" class="btn btn-blue" style="font-size:14px;padding:5px 14px">Buy</a></div></div>
+        <div class="card"><p class="tag">New</p><h3>iPhone 16 Pro</h3><p class="desc">Built for Apple Intelligence.</p><p class="price">From RM 4,999</p><div class="card-media"><img src="images/Iphone 16 pro max.png" alt="iPhone 16 Pro" style="transform:scale(1.2)"></div><div style="margin-top:20px"><a href="#" class="link">Learn more</a> &nbsp; <a href="#" class="btn btn-blue" style="font-size:14px;padding:5px 14px">Buy</a></div></div>
+        <div class="card"><p class="tag">New</p><h3>MacBook Air 13&Prime;</h3><p class="desc">Speed of lightness.</p><p class="price">From RM 4,499</p><div class="card-media"><img src="images/Macbook air 1.png" alt="MacBook Air" style="transform:scale(1.2)"></div><div style="margin-top:12px"><a href="#" class="link">Learn more</a> &nbsp; <a href="#" class="btn btn-blue" style="font-size:14px;padding:5px 14px">Buy</a></div></div>
+        <div class="card"><p class="tag">New</p><h3>iPad Pro</h3><p class="desc">Unbelievably thin. Incredibly powerful.</p><p class="price">From RM 4,199</p><div class="card-media"><img src="images/Ipad Pro.png" alt="iPad Pro" style="transform:scale(1.35)"></div><div style="margin-top:12px"><a href="#" class="link">Learn more</a> &nbsp; <a href="#" class="btn btn-blue" style="font-size:14px;padding:5px 14px">Buy</a></div></div>
+        <div class="card"><p class="tag">New</p><h3>Apple Watch Series 10</h3><p class="desc">Thinnest ever.</p><p class="price">From RM 1,999</p><div class="card-media"><img src="images/Apple Watch.png" alt="Apple Watch Series 10"></div><div style="margin-top:12px"><a href="#" class="link">Learn more</a> &nbsp; <a href="#" class="btn btn-blue" style="font-size:14px;padding:5px 14px">Buy</a></div></div>
       </div>
     </div>
   </section>
@@ -77,42 +59,12 @@
   <!-- ===== Trade In (light) ===== -->
   <section class="section section-light" style="padding-top:10px">
     <div class="wrap">
-      <div class="banner" style="background:#e8e8ed">
-        <div class="copy">
+      <div class="banner" style="background:#f3f3f5 url('images/Trade In Background.PNG') center/104% auto no-repeat;min-height:300px;border-radius:28px;overflow:hidden;border:1px solid rgba(0,0,0,.08)">
+        <div class="copy" style="max-width:340px">
           <p style="color:var(--text-dark);font-size:13px;margin-bottom:6px">&#63743; Trade In</p>
           <h3 style="color:var(--text-dark)">Get credit toward<br>your next purchase.</h3>
           <p style="color:var(--text-dark-dim)">Trade in your eligible device and get credit toward a new one.</p>
-          <a href="#" class="link">Learn more</a>
         </div>
-        <div class="media"><div class="ph" style="min-height:160px">Devices</div></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== Shop by Product (light) ===== -->
-  <section class="section section-light" style="text-align:left">
-    <div class="wrap">
-      <h2 style="font-size:30px;text-align:left">Shop by Product.</h2>
-      <div class="grid grid-4">
-        <div class="card"><h3>iPhone</h3><p class="price">From RM 2,999</p><a href="#" class="link">Shop iPhone</a><div class="ph">iPhone</div></div>
-        <div class="card"><h3>Mac</h3><p class="price">From RM 4,499</p><a href="#" class="link">Shop Mac</a><div class="ph">Mac</div></div>
-        <div class="card"><h3>iPad</h3><p class="price">From RM 1,499</p><a href="#" class="link">Shop iPad</a><div class="ph">iPad</div></div>
-        <div class="card"><h3>Apple Watch</h3><p class="price">From RM 1,199</p><a href="#" class="link">Shop Apple Watch</a><div class="ph">Watch</div></div>
-        <div class="card"><h3>AirPods</h3><p class="price">From RM 599</p><a href="#" class="link">Shop AirPods</a><div class="ph">AirPods</div></div>
-        <div class="card"><h3>TV &amp; Home</h3><p class="price">From RM 749</p><a href="#" class="link">Shop TV &amp; Home</a><div class="ph">TV</div></div>
-        <div class="card"><h3>Accessories</h3><p class="desc">Shop all accessories.</p><a href="#" class="link">Shop Accessories</a><div class="ph">Acc</div></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== Benefits row (light) ===== -->
-  <section class="section section-light" style="padding-top:10px">
-    <div class="wrap">
-      <div class="grid grid-4">
-        <div><h3 style="font-size:17px">Free delivery</h3><p class="desc">And free returns.</p></div>
-        <div><h3 style="font-size:17px">Pay monthly at 0%</h3><p class="desc">With selected banks.</p></div>
-        <div><h3 style="font-size:17px">Personal setup</h3><p class="desc">We&rsquo;ll help you set up your new device.</p></div>
-        <div><h3 style="font-size:17px">Get help buying</h3><p class="desc">Call a Specialist.</p></div>
       </div>
     </div>
   </section>
@@ -128,11 +80,87 @@
         <div><h5>About Apple</h5><a href="#">Newsroom</a><a href="#">Apple Leadership</a><a href="#">Investors</a><a href="#">Contact Apple</a></div>
       </div>
       <div class="legal">
+        <strong style="display:block;margin-bottom:8px;color:#86868b;font-weight:600">This is a student web-design project for educational purposes only. Not affiliated with, endorsed by, or sponsored by Apple Inc. &ldquo;Apple&rdquo;, the Apple logo, and all product names are trademarks of Apple Inc.</strong>
         More ways to shop: Find an Apple Store or other retailer near you. Or call 1-800-MY-APPLE.<br>
         Copyright &copy; 2025 Apple Inc. All rights reserved. &nbsp; Privacy Policy &nbsp; Terms of Use &nbsp; Sales and Refunds &nbsp; Legal &nbsp; Site Map
       </div>
     </div>
   </footer>
+
+  <!-- ===== Product detail modal (Learn more) ===== -->
+  <div class="product-modal" id="productModal" aria-hidden="true">
+    <div class="product-modal-box">
+      <button class="product-modal-close" id="pmClose" aria-label="Close">&times;</button>
+      <div class="product-modal-media"><img id="pmImg" src="" alt=""></div>
+      <div class="product-modal-info">
+        <p class="pm-tag">New</p>
+        <h3 id="pmName"></h3>
+        <p class="pm-tagline" id="pmTagline"></p>
+        <ul class="pm-specs" id="pmSpecs"></ul>
+        <p class="pm-price" id="pmPrice"></p>
+        <div class="pm-actions">
+          <a href="#" class="btn btn-blue" id="pmBuy">Buy</a>
+          <a href="support.html" class="link">Need help?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Toast (Added to bag) ===== -->
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+    <span id="toastMsg">Added to bag</span>
+  </div>
+
+  <script>
+  (function(){
+    var SPECS = {
+      "iPhone 16 Pro": ["6.3-inch Super Retina XDR display","A18 Pro chip with Apple Intelligence","48MP Fusion main camera","Aerospace-grade titanium design"],
+      "MacBook Air 13″": ["Apple M3 chip","13.6-inch Liquid Retina display","Up to 18 hours battery life","1.24 kg — remarkably thin and light"],
+      "iPad Pro": ["Apple M4 chip","Ultra Retina XDR display","Works with Apple Pencil Pro","Just 5.1 mm — the thinnest Apple product ever"],
+      "Apple Watch Series 10": ["Largest, most advanced display yet","Thinnest Apple Watch ever","Sleep apnea notifications","Fast charging — up to 80% in about 30 min"]
+    };
+    var modal=document.getElementById('productModal');
+    var toast=document.getElementById('toast');
+    var toastMsg=document.getElementById('toastMsg');
+    var toastTimer;
+    function showToast(msg){
+      toastMsg.textContent=msg||'Added to bag';
+      toast.classList.add('show');
+      clearTimeout(toastTimer);
+      toastTimer=setTimeout(function(){toast.classList.remove('show');},2200);
+    }
+    function openModal(card){
+      var name=card.querySelector('h3').textContent.trim();
+      var tagline=card.querySelector('.desc').textContent.trim();
+      var price=card.querySelector('.price').textContent.trim();
+      var imgSrc=card.querySelector('.card-media img').getAttribute('src');
+      document.getElementById('pmName').textContent=name;
+      document.getElementById('pmTagline').textContent=tagline;
+      document.getElementById('pmPrice').textContent=price;
+      var img=document.getElementById('pmImg');
+      img.setAttribute('src',imgSrc); img.setAttribute('alt',name);
+      var ul=document.getElementById('pmSpecs'); ul.innerHTML='';
+      (SPECS[name]||[]).forEach(function(s){var li=document.createElement('li');li.textContent=s;ul.appendChild(li);});
+      modal.classList.add('open'); modal.setAttribute('aria-hidden','false');
+      document.body.style.overflow='hidden';
+    }
+    function closeModal(){
+      modal.classList.remove('open'); modal.setAttribute('aria-hidden','true');
+      document.body.style.overflow='';
+    }
+    document.addEventListener('click',function(e){
+      var learn=e.target.closest('.grid-4 .card .link');
+      if(learn){ e.preventDefault(); openModal(learn.closest('.card')); return; }
+      var buy=e.target.closest('.grid-4 .card .btn-blue');
+      if(buy){ e.preventDefault(); showToast('Added to bag'); return; }
+    });
+    document.getElementById('pmClose').addEventListener('click',closeModal);
+    document.getElementById('pmBuy').addEventListener('click',function(e){e.preventDefault();closeModal();showToast('Added to bag');});
+    modal.addEventListener('click',function(e){ if(e.target===modal) closeModal(); });
+    document.addEventListener('keydown',function(e){ if(e.key==='Escape'&&modal.classList.contains('open')) closeModal(); });
+  })();
+  </script>
 
   <script src="js/script.js"></script>
 </body>

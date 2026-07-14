@@ -80,4 +80,19 @@ document.addEventListener('DOMContentLoaded', function () {
       if (e.key === 'Escape' && modal.classList.contains('open')) { closeModal(); }
     });
   }
+
+  // ===== "Added to calendar" toast =====
+  var calBtn = document.getElementById('addToCalendar');
+  var toast  = document.getElementById('toast');
+  if (calBtn && toast) {
+    var toastTimer;
+    calBtn.addEventListener('click', function (e) {
+      e.preventDefault();
+      toast.classList.add('show');
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(function () {
+        toast.classList.remove('show');
+      }, 2500);
+    });
+  }
 });

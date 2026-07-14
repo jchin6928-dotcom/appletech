@@ -21,10 +21,6 @@
         <a href="entertainment.html">Entertainment</a>
         <a href="support.html" class="active">Support</a>
       </nav>
-      <div class="nav-icons">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 7h12l1 13H5L6 7z"/><path d="M9 7a3 3 0 016 0"/></svg>
-      </div>
       <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
   </header>
@@ -41,17 +37,7 @@
         <p style="font-size:21px;margin:14px 0">We&rsquo;re here to help.<br>Whenever and however you need it.</p>
         <div class="search-box">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg>
-          <input type="text" placeholder="Search Support">
-        </div>
-        <div class="cats" style="justify-content:flex-start;margin-top:10px">
-          <div class="cat"><div class="ph">iPhone</div>iPhone</div>
-          <div class="cat"><div class="ph">Mac</div>Mac</div>
-          <div class="cat"><div class="ph">iPad</div>iPad</div>
-          <div class="cat"><div class="ph">Watch</div>Watch</div>
-          <div class="cat"><div class="ph">AirPods</div>AirPods</div>
-          <div class="cat"><div class="ph">Music</div>Music</div>
-          <div class="cat"><div class="ph">TV</div>TV</div>
-          <div class="cat"><div class="ph">More</div>More</div>
+          <input type="text" id="supportSearch" placeholder="Search Support" autocomplete="off">
         </div>
       </div>
     </div>
@@ -60,14 +46,13 @@
   <!-- ===== AppleCare+ banner (light) ===== -->
   <section class="section" style="padding-top:0">
     <div class="wrap">
-      <div class="banner" style="background:#fff;color:var(--text-dark);margin-top:0;padding:30px 44px">
+      <div class="banner" style="background:#fff;color:var(--text-dark);margin-top:-70px;position:relative;z-index:2;padding:30px 44px">
         <div class="copy" style="display:flex;gap:20px;align-items:center">
-          <div class="ph" style="width:110px;height:110px;min-height:110px;flex:none;border-radius:24px;padding:0;overflow:hidden;background:none"><img src="images/AppleCare+ Logo.png" alt="AppleCare+" style="width:100%;height:100%;object-fit:cover"></div>
+          <div class="ph" style="width:110px;height:110px;min-height:110px;flex:none;border-radius:24px;padding:0;overflow:hidden;background:none"><img src="images/AppleCare+ Logo.png" alt="AppleCare+" style="width:170%;height:170%;object-fit:cover"></div>
           <div>
             <p style="font-size:12px;letter-spacing:1px;color:var(--text-dark-dim)">APPLECARE+</p>
             <h3 style="color:var(--text-dark)">Expert support.<br>Extended coverage.</h3>
             <p style="color:var(--text-dark-dim)">Priority access to Apple experts, hardware repair coverage, and protection for your Apple devices.</p>
-            <a href="#" class="btn btn-blue" style="margin-top:8px">Learn more</a>
           </div>
         </div>
         <div class="media"><img src="images/AppleCare Devices.png" alt="Apple devices" style="height:190px;width:auto;max-width:100%;display:block;margin:0 auto"></div>
@@ -80,57 +65,10 @@
     <div class="wrap">
       <h2 style="font-size:28px;text-align:left">Get help for your device</h2>
       <div class="grid grid-4">
-        <div class="card"><h3 style="font-size:18px">Chat with Support</h3><p class="desc">Chat online with an Apple Support Specialist.</p><a href="#" class="link">Start chat</a></div>
-        <div class="card"><h3 style="font-size:18px">Call Support</h3><p class="desc">Speak with an Apple Support Specialist.</p><a href="#" class="link">Call us</a></div>
-        <div class="card"><h3 style="font-size:18px">Schedule a Call</h3><p class="desc">Make an appointment for Apple Support to call you.</p><a href="#" class="link">Schedule now</a></div>
-        <div class="card"><h3 style="font-size:18px">Find a Store</h3><p class="desc">Visit an Apple Store or Apple Authorized Service Provider.</p><a href="#" class="link">Find a location</a></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== Recommended for you ===== -->
-  <section class="section" style="text-align:left;padding-top:0">
-    <div class="wrap">
-      <h2 style="font-size:28px;text-align:left">Recommended for you</h2>
-      <div class="grid grid-4">
-        <div class="card"><h3 style="font-size:18px">Check Device Coverage</h3><p class="desc">Review your Apple warranty status and coverage.</p><a href="#" class="link">Check now</a></div>
-        <div class="card"><h3 style="font-size:18px">Repair Options</h3><p class="desc">See your repair options and pricing.</p><a href="#" class="link">Learn more</a></div>
-        <div class="card"><h3 style="font-size:18px">Apple ID Support</h3><p class="desc">Get help with your Apple ID and account.</p><a href="#" class="link">Get help</a></div>
-        <div class="card"><h3 style="font-size:18px">Billing &amp; Subscriptions</h3><p class="desc">Manage your Apple purchases and subscriptions.</p><a href="#" class="link">Learn more</a></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== AppleCare+ feature row ===== -->
-  <section class="section" style="padding-top:0">
-    <div class="wrap">
-      <div class="banner">
-        <div class="copy">
-          <h3 style="font-size:22px">AppleCare+</h3>
-          <p>Get the most out of your Apple devices.</p>
-          <div style="display:flex;gap:24px;flex-wrap:wrap;margin-top:10px;font-size:13px;color:var(--text-dim)">
-            <span>Unlimited repairs for accidental damage</span><span>Apple-certified service</span><span>Express Replacement</span><span>24/7 priority access</span>
-          </div>
-        </div>
-        <div class="copy">
-          <p>Coverage for iPhone, iPad, Mac, Apple Watch, AirPods and more.</p>
-          <a href="#" class="link">Check eligibility</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== Popular support topics ===== -->
-  <section class="section" style="text-align:left;padding-top:0">
-    <div class="wrap">
-      <h2 style="font-size:24px;text-align:left">Popular support topics</h2>
-      <div class="grid grid-3" style="margin-top:20px">
-        <a href="#" class="link">Update your iPhone or iPad</a>
-        <a href="#" class="link">If your device is lost or stolen</a>
-        <a href="#" class="link">How to reset your Apple device</a>
-        <a href="#" class="link">Back up your iPhone, iPad, or iPod touch</a>
-        <a href="#" class="link">Apple ID &amp; password help</a>
-        <a href="#" class="link">Accessibility</a>
+        <div class="card" style="height:auto"><img src="images/Chat Icon.png" alt="" style="width:38px;height:38px;object-fit:contain;display:block;margin-bottom:14px"><h3 style="font-size:18px">Chat with Support</h3><p class="desc">Chat online with an Apple Support Specialist.</p><a href="#" class="link" id="startChat">Start chat</a></div>
+        <div class="card" style="height:auto"><img src="images/Call Icon.png" alt="" style="width:38px;height:38px;object-fit:contain;display:block;margin-bottom:14px"><h3 style="font-size:18px">Call Support</h3><p class="desc">Speak with an Apple Support Specialist.</p><a href="#" class="link" id="callUs">Call us</a></div>
+        <div class="card" style="height:auto"><img src="images/Schedule Icon.png" alt="" style="width:38px;height:38px;object-fit:contain;display:block;margin-bottom:14px"><h3 style="font-size:18px">Schedule a Call</h3><p class="desc">Make an appointment for Apple Support to call you.</p><a href="#" class="link" id="scheduleNow">Schedule now</a></div>
+        <div class="card" style="height:auto"><img src="images/Location Icon.png" alt="" style="width:38px;height:38px;object-fit:contain;display:block;margin-bottom:14px"><h3 style="font-size:18px">Find a Store</h3><p class="desc">Visit an Apple Store or Apple Authorized Service Provider.</p><a href="#" class="link" id="findLocation">Find a location</a></div>
       </div>
     </div>
   </section>
@@ -146,12 +84,215 @@
         <div><h5>More</h5><a href="#">Communities</a><a href="#">Downloads</a><a href="#">Manuals</a><a href="#">System Status</a></div>
       </div>
       <div class="legal">
+        <strong style="display:block;margin-bottom:8px;color:#86868b;font-weight:600">This is a student web-design project for educational purposes only. Not affiliated with, endorsed by, or sponsored by Apple Inc. &ldquo;Apple&rdquo;, the Apple logo, and all product names are trademarks of Apple Inc.</strong>
         More ways to shop: Find an Apple Store or other retailer near you. Or call 1-800-MY-APPLE.<br>
         Copyright &copy; 2025 Apple Inc. All rights reserved. &nbsp; Privacy Policy &nbsp; Terms of Use &nbsp; Sales and Refunds &nbsp; Legal &nbsp; Site Map
       </div>
     </div>
   </footer>
 
+  <!-- ===== Search suggestions dropdown ===== -->
+  <div class="search-drop" id="searchDrop"></div>
+
+  <!-- ===== Search answer modal ===== -->
+  <div class="modal-backdrop" id="answerModal">
+    <div class="modal-box">
+      <button class="modal-x" data-close aria-label="Close">&times;</button>
+      <h3 id="answerTitle"></h3>
+      <p class="modal-sub" id="answerText" style="margin-bottom:20px;font-size:15px;line-height:1.5"></p>
+      <button class="btn btn-blue" data-close>Got it</button>
+    </div>
+  </div>
+
+  <!-- ===== Chat widget (bottom-right) ===== -->
+  <div class="chat-widget" id="chatWidget">
+    <div class="chat-header">
+      <span>&#63743; Support</span>
+      <button class="chat-close" id="chatClose" aria-label="Close">&times;</button>
+    </div>
+    <div class="chat-body" id="chatBody">
+      <div class="chat-msg bot">Hi! &#128075; I&rsquo;m an Apple Support Specialist. How can I help you today?</div>
+    </div>
+    <form class="chat-input" id="chatForm">
+      <input type="text" id="chatText" placeholder="Type a message&hellip;" autocomplete="off">
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+  <!-- ===== Call action sheet ===== -->
+  <div class="sheet-backdrop" id="callSheet">
+    <div class="action-sheet">
+      <a href="tel:1800806419" class="action-call">Call 1800-80-6419</a>
+      <button class="action-cancel" data-close>Cancel</button>
+    </div>
+  </div>
+
+  <!-- ===== Schedule modal ===== -->
+  <div class="modal-backdrop" id="scheduleModal">
+    <div class="modal-box">
+      <button class="modal-x" data-close aria-label="Close">&times;</button>
+      <div id="schedForm">
+        <h3>Schedule a Call</h3>
+        <p class="modal-sub">Pick a date and time &mdash; Apple Support will call you.</p>
+        <label>Date<input type="date" id="schedDate"></label>
+        <label>Time<select id="schedTime">
+          <option>9:00 AM</option><option>10:00 AM</option><option>11:00 AM</option>
+          <option>1:00 PM</option><option>2:00 PM</option><option>3:00 PM</option><option>4:00 PM</option>
+        </select></label>
+        <button class="btn btn-blue" id="schedConfirm">Confirm appointment</button>
+      </div>
+      <div id="schedDone" style="display:none;text-align:center">
+        <div class="modal-check"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <h3>Appointment confirmed</h3>
+        <p class="modal-sub" id="schedSummary"></p>
+        <button class="btn btn-blue" data-close>Done</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Find a location (map) modal ===== -->
+  <div class="modal-backdrop" id="mapModal">
+    <div class="modal-box map-box">
+      <div class="map-head">
+        <h3 style="margin:0">Apple Stores near you</h3>
+        <button class="modal-x" data-close aria-label="Close" style="position:static">&times;</button>
+      </div>
+      <iframe id="mapFrame" title="Nearby Apple Stores" loading="lazy"
+              data-src="https://maps.google.com/maps?q=Apple%20Store&z=11&output=embed"></iframe>
+    </div>
+  </div>
+
   <script src="js/script.js"></script>
+  <script>
+  (function () {
+    function $(id){ return document.getElementById(id); }
+
+    // ---- Chat widget ----
+    var chat = $('chatWidget');
+    if ($('startChat')) $('startChat').addEventListener('click', function (e) {
+      e.preventDefault(); chat.classList.add('open'); $('chatText').focus();
+    });
+    if ($('chatClose')) $('chatClose').addEventListener('click', function () { chat.classList.remove('open'); });
+    function addMsg(text, who) {
+      var d = document.createElement('div');
+      d.className = 'chat-msg ' + who; d.textContent = text;
+      var b = $('chatBody'); b.appendChild(d); b.scrollTop = b.scrollHeight;
+    }
+    if ($('chatForm')) $('chatForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var t = $('chatText').value.trim(); if (!t) return;
+      addMsg(t, 'user'); $('chatText').value = '';
+      setTimeout(function () {
+        addMsg('Thanks for reaching out! An Apple Support Specialist will be with you shortly. 🍎', 'bot');
+      }, 700);
+    });
+
+    // ---- Call action sheet ----
+    if ($('callUs')) $('callUs').addEventListener('click', function (e) {
+      e.preventDefault(); $('callSheet').classList.add('open');
+    });
+
+    // ---- Schedule ----
+    var sched = $('scheduleModal');
+    function resetSched(){ $('schedForm').style.display = 'block'; $('schedDone').style.display = 'none'; }
+    if ($('scheduleNow')) $('scheduleNow').addEventListener('click', function (e) {
+      e.preventDefault();
+      var iso = new Date().toISOString().slice(0, 10);
+      $('schedDate').min = iso; if (!$('schedDate').value) $('schedDate').value = iso;
+      resetSched(); sched.classList.add('open');
+    });
+    if ($('schedConfirm')) $('schedConfirm').addEventListener('click', function () {
+      var dv = $('schedDate').value; if (!dv) { $('schedDate').focus(); return; }
+      var d = new Date(dv + 'T00:00:00');
+      var pretty = d.toLocaleDateString(undefined, { weekday: 'long', month: 'long', day: 'numeric' });
+      $('schedSummary').textContent = "We'll call you on " + pretty + ' at ' + $('schedTime').value + '.';
+      $('schedForm').style.display = 'none'; $('schedDone').style.display = 'block';
+    });
+
+    // ---- Map (lazy-load iframe) ----
+    var mapFrame = $('mapFrame');
+    if ($('findLocation')) $('findLocation').addEventListener('click', function (e) {
+      e.preventDefault();
+      if (mapFrame && !mapFrame.src) mapFrame.src = mapFrame.getAttribute('data-src');
+      $('mapModal').classList.add('open');
+    });
+
+    // ---- Generic close: backdrop click, [data-close], Esc ----
+    function closeOverlay(m){ if (!m) return; m.classList.remove('open'); if (m === sched) resetSched(); }
+    document.querySelectorAll('.modal-backdrop, .sheet-backdrop').forEach(function (bd) {
+      bd.addEventListener('click', function (e) { if (e.target === bd) closeOverlay(bd); });
+    });
+    document.querySelectorAll('[data-close]').forEach(function (btn) {
+      btn.addEventListener('click', function () { closeOverlay(btn.closest('.modal-backdrop, .sheet-backdrop')); });
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') document.querySelectorAll('.modal-backdrop.open, .sheet-backdrop.open').forEach(closeOverlay);
+    });
+
+    // ---- Search Support (suggestions + answer) ----
+    var FAQ = [
+      { q: 'Reset your iPhone or iPad', a: 'Go to Settings > General > Transfer or Reset iPhone. Choose "Erase All Content and Settings" for a factory reset. Always back up first!' },
+      { q: 'Check your battery health', a: 'Open Settings > Battery > Battery Health & Charging. If Maximum Capacity is below 80%, consider a battery service.' },
+      { q: 'Update to the latest iOS', a: 'Go to Settings > General > Software Update and tap Update Now. Keep your device charged and connected to Wi-Fi.' },
+      { q: 'Back up with iCloud', a: 'Settings > [your name] > iCloud > iCloud Backup, then tap "Back Up Now". Make sure you have enough iCloud storage.' },
+      { q: 'Reset your Apple ID password', a: 'Visit iforgot.apple.com, or go to Settings > [your name] > Sign-In & Security > Change Password and follow the steps.' },
+      { q: 'Find or erase a lost device', a: 'Sign in at icloud.com/find or use the Find My app to play a sound, mark as lost, or erase your device remotely.' },
+      { q: 'AppleCare+ coverage & claims', a: 'Check your coverage at checkcoverage.apple.com. To file a claim, open the Apple Support app or contact us.' },
+      { q: 'Transfer data to a new iPhone', a: 'Turn on your new iPhone next to your old one and use Quick Start, or restore from an iCloud backup during setup.' },
+      { q: 'Fix Wi-Fi or Bluetooth issues', a: 'Toggle the connection off and on, forget and rejoin the network, or reset Network Settings under General > Transfer or Reset.' },
+      { q: 'Contact Apple Support', a: 'Use Chat, Call (1800-80-6419), or Schedule a Call from the options above, or visit an Apple Authorized Service Provider.' }
+    ];
+    var input = $('supportSearch'), drop = $('searchDrop'), answerModal = $('answerModal');
+    var matches = [];
+    function positionDrop() {
+      var r = input.getBoundingClientRect();
+      drop.style.left = r.left + 'px';
+      drop.style.top = (r.bottom + 6) + 'px';
+      drop.style.width = r.width + 'px';
+    }
+    function renderDrop() {
+      var qv = input.value.trim().toLowerCase();
+      if (!qv) { drop.classList.remove('open'); return; }
+      matches = FAQ.filter(function (f) {
+        return f.q.toLowerCase().indexOf(qv) > -1 || f.a.toLowerCase().indexOf(qv) > -1;
+      }).slice(0, 6);
+      if (!matches.length) {
+        drop.innerHTML = '<div class="search-empty">No results. Try &ldquo;battery&rdquo;, &ldquo;reset&rdquo;, or &ldquo;iCloud&rdquo;&hellip;</div>';
+      } else {
+        drop.innerHTML = matches.map(function (f, i) {
+          return '<div class="search-drop-item" data-i="' + i + '">'
+            + '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg>'
+            + '<span></span></div>';
+        }).join('');
+        var spans = drop.querySelectorAll('.search-drop-item span');
+        matches.forEach(function (f, i) { spans[i].textContent = f.q; });
+      }
+      positionDrop();
+      drop.classList.add('open');
+    }
+    function openAnswer(f) {
+      $('answerTitle').textContent = f.q;
+      $('answerText').textContent = f.a;
+      drop.classList.remove('open');
+      answerModal.classList.add('open');
+    }
+    if (input && drop) {
+      input.addEventListener('input', renderDrop);
+      input.addEventListener('focus', function () { if (input.value.trim()) renderDrop(); });
+      input.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter') { e.preventDefault(); if (matches.length) openAnswer(matches[0]); }
+      });
+      drop.addEventListener('click', function (e) {
+        var item = e.target.closest('.search-drop-item'); if (!item) return;
+        openAnswer(matches[+item.getAttribute('data-i')]);
+      });
+      window.addEventListener('scroll', function () { drop.classList.remove('open'); }, true);
+      window.addEventListener('resize', function () { if (drop.classList.contains('open')) positionDrop(); });
+      document.addEventListener('click', function (e) {
+        if (drop.classList.contains('open') && !drop.contains(e.target) && e.target !== input) drop.classList.remove('open');
+      });
+    }
+  })();
+  </script>
 </body>
 </html>

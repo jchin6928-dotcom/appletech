@@ -1,6 +1,10 @@
+# macOS
 .DS_Store
-**/.DS_Store
-# 视频超过 GitHub(100MB)/Cloudflare Pages(25MB) 上限，暂不纳入
-images/*.mov
+
+# Large / unused source video files.
+# The website only uses the "* web.mp4" versions, which are kept.
+# These are excluded because .mov source files exceed GitHub's 100MB limit
+# and the non-web .mp4 versions are not referenced by any page.
+*.mov
 images/Apple tv Trailer.mp4
 images/Apple Music Trailer.mp4
