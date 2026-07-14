@@ -96,3 +96,18 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 });
+
+/* ===== Fit-to-width: scale the WHOLE page down to fit narrow windows =====
+   When the window is narrower than the fixed design width, the entire page
+   is uniformly zoomed out so the full layout stays visible with nothing
+   moving out of place (no reflow, no horizontal scroll). */
+(function () {
+  var DESIGN_WIDTH = 1180;
+  function fitToWidth() {
+    var w = document.documentElement.clientWidth;
+    document.body.style.zoom = (w < DESIGN_WIDTH) ? (w / DESIGN_WIDTH) : 1;
+  }
+  window.addEventListener('resize', fitToWidth);
+  window.addEventListener('orientationchange', fitToWidth);
+  fitToWidth();
+})();
