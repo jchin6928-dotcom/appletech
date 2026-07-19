@@ -760,4 +760,4 @@ h1.hero-title   { font-size: 48px; font-weight: 600; letter-spacing: -.5px; }
 /* ===== FIXED-LAYOUT LOCK (no reflow on resize) =====
    body holds the fixed design width; js/script.js applies `zoom` to <body>
    to scale the whole page down to fit narrower windows (no reflow). */
-body { min-width: 1180px; }
+body { min-width: 1600px; }

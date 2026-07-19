@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', function () {
    is uniformly zoomed out so the full layout stays visible with nothing
    moving out of place (no reflow, no horizontal scroll). */
 (function () {
-  var DESIGN_WIDTH = 1180;
+  var DESIGN_WIDTH = 1600;
   function fitToWidth() {
     var w = document.documentElement.clientWidth;
     document.body.style.zoom = (w < DESIGN_WIDTH) ? (w / DESIGN_WIDTH) : 1;
